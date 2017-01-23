@@ -17,8 +17,3 @@
 
   <input type="submit">
 </form>
-
-
-<% @users.each do |user| %>
-  <a href="/users/<%= user.id %>"><p><%= user.first_name %> <%= user.last_name %></p></a>
-<% end %>
