@@ -1,5 +1,7 @@
-<!-- <h1>User <%#= @current_user.first_name %> logged in </h1>
- -->
+<% if @current_user %>
+  <h1>User <%= @current_user.first_name %> logged in </h1>
+<% end %>
+
 <form action="/users" method="post">
 
   <label> First Name </label>
@@ -17,3 +19,8 @@
 
   <input type="submit">
 </form>
+
+
+<% @users.each do |user| %>
+  <a href="/users/<%= user.id %>"><p><%= user.first_name %> <%= user.last_name %></p></a>
+<% end %>

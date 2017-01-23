@@ -16,6 +16,7 @@ end
 
 get '/' do
   @users = User.all
+  current_user
   erb :users
 end
 
