@@ -1,0 +1,13 @@
+body {
+	background-color: #CCC;
+}
+
+.flash {
+	font-size: 20px;
+}
+.flash.alert {
+ 	background-color: red;
+}
+.flash.notice {
+	background-color: green;
+}
